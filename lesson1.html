@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Learning Literacy</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section>
+      <div class="headerContainer">
+        <header>
+            <ul>
+                <li><a href="file:///C:/Users/Sophia/OneDrive/Desktop/webDev/Girls%20ReCode%20Hackathon/index.html">Home</a></li>
+                <li><a href="file:///C:/Users/Sophia/OneDrive/Desktop/webDev/Girls%20ReCode%20Hackathon/moreInfo.html">More Info</a></li>
+                <li><h1>Learning Literacy: Your guide to digital literacy</h1></li>
+            </ul>
+        </header>
+      </div>
+      <div class="part1">
+        <h1>Using Web Browsers</h1>
+        <div class = "slide1">
+          <img src = "lesson1.1.png" height="600px">
+        </div>
+        <div class="slide1info">
+          <p>
+            Veda was assigned to create a research paper based on her favorite dog.
+             She chose a poodle! However, she is not a poodle expert and will need 
+             to use outside sources to complete her paper. 
+            <br><br><br>
+            She can use a search engine, a software program that helps people find the 
+            information they are looking for online using keywords or phrases. Common search 
+            engines include Google, Bing, Yahoo!, and Firefox. 
+          </p>
+          <div class="engines">
+            <img src="searchengines.png">
+          </div>
+          <div class="slide2info">
+            <p>
+              However, it is important for Veda to use reliable resources, 
+              otherwise, her information may be incorrect. 
+               <br><br>
+                To identify a reliable resource, first look at the author. 
+                They should have good credentials and knowledge in the field 
+                you are searching for. Then, look at the domain name. 
+                The domain name is the three letters that follow at the end of the 
+                website's domain name. The most credible sources are .gov and .edu. 
+                If the domain name ends in .com or .org be weary of the website. 
+            </p>
+          </div>
+        </div>
+      </div>
+        <br>
+
+      <div class="question1">
+        <h3>Question: Look at the websites below, what website should Veda look at?</h3>
+        <br><br>
+        <img id="webs" src="webs.png" height="600px">
+        <button id="falseButton">Option 1</button>
+        <button id="trueButton">Option 2</button>
+      </div>
+      <div style = "visibility: hidden"; id="image1"></div>
+      <div id="part2">
+        <img src="1.2.png" height="550px">
+        <h2>Citing Websites</h2>
+        <p>
+          Since Veda is using this website for a research paper, she has to cite the website. This is because it is important to give credit to the original source when you are referring to it in your work. 
+          <br><br>
+          To cite a website follow these steps,
+          <br><br>
+          1. Put the author’s first name and last name
+          <br><br>
+          2. Put the page title (a.k.a the paper’s name)
+          <br><br>
+          3. Put the website’s name
+          <br><br>
+          4. Put the month, day, and year the paper was created/updated
+          <br><br>
+          5. Lastly, put the URL of the website
+          <br><br>
+          Together it should look like, Author's last name, First name. “Page Title.” Website Name. Month Day, Year. URL.
+        </p>
+        <div class="question2">
+          <h1>Question: Look at the citations below, which is the correct one?</h1>
+          <button id="oneButton">Zhang, Z., Khederzadeh, S., amp; Li, Y. (2020, March 18), from https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7109016/</button>
+          <br>
+          <button id="twoButton">(2020, March 18). Retrieved March 18, 2023. Deciphering the puzzles of dog domestication. Zoological research.</button>
+          <br>
+          <button id="threeButton">Zhang, Z., Khederzadeh, S., amp; Li, Y. (2020, March 18). Deciphering the puzzles of dog domestication. Zoological research. Retrieved March 18, 2023, from https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7109016/</button>
+      </div>
+      <div id="part3">
+        <p>
+          Veda was able to complete her paper! Now you and Veda both know how to find reliable websites and cite them.
+        <br>
+        <br>
+        <br>
+        </p>
+        <img src="girl4.png" height="500px">
+        <br><br>
+        <br><br>
+        </div>
+      </div>
+    </section>
+    <div class="home">
+      <a href="file:///C:/Users/Sophia/OneDrive/Desktop/webDev/Girls%20ReCode%20Hackathon/index.html">
+        <img src="home.png" height="150px">
+      </a>
+    </div>
+  </body>
+
+
+
+  <script>
+
+    const image1 = document.querySelector('#part2');
+    const selectTrue = document.querySelector('#trueButton');
+    const selectFalse = document.querySelector('#falseButton');
+
+    image1.style.opacity = '0';
+    image1.style.transition= '0.5s';
+
+    selectTrue.addEventListener('click', () => {
+      image1.style.opacity = '1';
+      trueButton.style.background = 'greenyellow';
+      falseButton.style.background = 'lightgrey';
+
+    })
+
+    selectFalse.addEventListener('click', () => {
+      falseButton.style.background = 'red';
+      image1.style.opacity = '0';
+      trueButton.style.background = 'lightgrey';
+
+    })
+
+
+
+    const part3 = document.querySelector('#part3');
+    const selectOne = document.querySelector('#oneButton');
+    const selectThree = document.querySelector('#threeButton');
+    const selectTwo = document.querySelector('#twoButton');
+
+    part3.style.opacity = '0';
+    part3.style.transition= '0.5s';
+
+
+
+    selectThree.addEventListener('click', () => {
+      part3.style.opacity = '1';
+      threeButton.style.background = 'greenyellow';
+      twoButton.style.background = 'lightgrey';
+      oneButton.style.background = 'lightgrey';
+    })
+
+    selectOne.addEventListener('click', () => {
+      oneButton.style.background = 'red';
+      part3.style.opacity = '0';
+      threeButton.style.background = 'lightgrey';
+    })
+    selectTwo.addEventListener('click', () => {
+      twoButton.style.background = 'red';
+      threeButton.style.background = 'lightgrey';
+      part3.style.opacity = '0';
+    })
+
+  </script>
+  <script src="myscripts.js"></script>
+</html> 

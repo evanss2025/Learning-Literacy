@@ -1,0 +1,929 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+section
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 200px;
+}
+
+
+
+/* Home page CSS */
+
+.lesson1
+{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -200px;
+  right: -700px;
+  animation: animate1 4s linear infinite;
+}
+
+.lesson1 .card
+{
+  position: relative;
+  margin: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@keyframes animate1
+{
+  0%, 100%
+  {
+    transform: translateY(20px);
+  }
+  50%
+  {
+    transform: translateY(50px);
+  }
+}
+.lesson1 .card .content h2
+{
+  color: white;
+  font-weight: 50px;
+  font-size: 30px;
+
+}
+
+.lesson1 .card .content
+{
+  position: relative;
+  padding: 20px 20px 20px 40px;
+  background-color: rgba(0, 194, 219, 0.3);
+  border-radius: 20px;
+  transition: 0.5s;
+  width: 500px;
+  left: -20%;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.lesson1 .card:hover .content
+{
+  left: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+.lesson2
+{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 350px;
+  right: 300px;
+  animation: animate2 4s linear infinite;
+
+}
+
+@keyframes animate2
+{
+  0%, 100%
+  {
+    transform: translateY(-20px);
+  }
+  50%
+  {
+    transform: translateY(-50px);
+  }
+}
+
+.lesson2 .card2
+{
+  position: relative;
+  margin: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.lesson2 .card2 .content2 h3
+{
+  color: white;
+  font-weight: 50px;
+  font-size: 30px;
+}
+
+.lesson2 .card2 .content2
+{
+  position: relative;
+  padding: 20px 20px 20px 40px;
+  background-color: rgba(219, 0, 183, 0.3);
+  border-radius: 20px;
+  transition: 0.5s;
+  width: 500px;
+  left: 30%;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.lesson2 .card2:hover .content2
+{
+  left: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+.lesson3
+{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -200px;
+  right: 700px;
+  animation: animate1 4s linear infinite;
+
+}
+
+.lesson3 .card3
+{
+  position: relative;
+  margin: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.lesson3 .card3 .content3 h3
+{
+  color: white;
+  font-weight: 50px;
+  font-size: 30px;
+
+}
+
+.lesson3 .card3 .content3
+{
+  position: relative;
+  padding: 20px 20px 20px 40px;
+  background-color: rgba(0, 219, 91, 0.3);
+  border-radius: 20px;
+  transition: 0.5s;
+  width: 500px;
+  left: 30%;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.lesson3 .card3:hover .content3
+{
+  left: 0;
+  opacity: 1;
+  visibility: visible;
+}
+header
+{
+    position: absolute;
+    top: 20px;
+    right: 80px;
+    left: 80px;
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #9ae9f3;  
+    box-shadow: 0 13px 0px rgb(106, 225, 255);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+header ul
+{
+    display: flex;
+    align-items: center;
+}
+
+header ul li
+{
+    list-style: none;
+    margin: 10 15px;
+}
+
+header ul h1
+{
+  margin-left: 370px;
+  color: white;
+  font-weight: 70px;
+  font-size: 35px;
+}
+
+header ul li a
+{
+    text-decoration: none;
+    font-weight: 600;
+    color:black;
+    padding: 8px 20px;
+    font-size: 25px;
+    border-radius: 25px;
+    margin-bottom: 100px;
+    margin-right: 40px;
+}
+header ul li a:hover,
+header ul li a.active
+{
+    background: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/*More infomation CSS*/
+.infomation
+{
+  align-items: center;
+  text-align: center;
+}
+.infomation h2
+{
+  font-size: 60px;
+  transition: 0.5s;
+}
+
+.infomation h2:hover
+{
+  font-size: 70px;
+}
+
+.infomation p
+{
+  width: 1000px;
+  font-size: 20px;
+}
+
+.sources p
+{
+  text-align: center;
+  font-size: 12px;
+}
+/*Story 1 css*/
+
+.part1 h1
+{
+  text-align: center;
+  font-size: 50px;
+  top: -30px;
+  position: relative;
+  right: 50px;
+  transition: 0.5s;
+}
+
+.part1 h1:hover
+{
+  font-size: 60px;
+}
+.slide1
+{
+  align-items: center;
+  text-align: center;
+  top: -100px;
+  position: relative;
+  animation: animate 3s linear infinite;
+  
+}
+
+@keyframes animate
+{
+  0%, 100%
+  {
+    transform: translateY(50px);
+  }
+  50%
+  {
+    transform: translateY(100px);
+  }
+}
+
+.part1
+{
+  align-items: center;
+  margin-left: 300px;
+  margin-right: 300px;
+  right: -5%;
+  position: relative;
+}
+
+.slide1info
+{
+  width:800px;
+  text-align: center;
+  font-size: 22px;
+  opacity: 1;
+}
+
+.engines img
+{
+  position: relative;
+  right: 70px;
+  margin-top: -50px;
+  height: 500px;
+  align-items: center;
+}
+
+/*lesson 1 questions */
+.question1 #trueButton
+{
+  background-color: lightgrey;
+  padding: 24px 75px;
+  margin: 30px;
+  border-radius: 20px;
+  transition: 0.5s;
+  border: none;
+  box-shadow: 0 5px 0px rgba(0, 0, 0, 0.3);
+  position: relative;
+  bottom: 70px;
+  right: 685px;
+  font-size: 15px;
+}
+
+.question1 #falseButton
+{
+  background-color: lightgrey;
+  padding: 24px 75px;
+  margin: 30px;
+  border-radius: 20px;
+  transition: 0.5s;
+  border: none;
+  box-shadow: 0 5px 0px rgba(0, 0, 0, 0.3);
+  position: relative;
+  bottom: 70px;
+  right: 685px;
+  font-size: 15px;
+}
+
+
+.question1
+{
+  position: absolute;
+  bottom: -1300px;
+  right: 250px;
+}
+
+.question1 h3
+{
+  font-size: 30px;
+  right: 470px;
+  position: absolute;
+  width: 980px;
+  text-align: center;
+  background-color: rgba(113, 255, 255, 0.8);
+  border-radius: 20px;
+}
+
+#part2
+{
+  bottom: -1300px;
+  align-items: center;
+  left: 400px;
+  position: absolute;
+}
+
+#part2 img
+{
+  position: absolute;
+  transition: 0.5s;
+  animation: animate 3s linear infinite;
+}
+
+#part2 p
+{
+  position: absolute;
+  left: 1000px;
+  text-align: left;
+  bottom: -630px;
+  width: 1000px;
+  font-size: 20px;
+}
+#part2 h2
+{
+  position: absolute;
+  left: 1200px;
+  text-align: center;
+  width:500px;
+  font-size: 50px;
+  transition: 0.5s;
+}
+
+#part2 h2:hover
+{
+  font-size: 60px;
+}
+.question1 #webs
+{
+  position: relative ;
+  left: 150px;
+}
+
+/*question 2*/
+.question2 #twoButton
+{
+  background-color: lightgrey;
+  padding: 24px 10px;
+  margin: 30px;
+  border-radius: 20px;
+  transition: 0.5s;
+  border: none;
+  box-shadow: 0 5px 0px rgba(0, 0, 0, 0.3);
+  position: relative;
+  width: 500px;
+  font-size: 15px;
+}
+
+.question2 #oneButton
+{
+  background-color: lightgrey;
+  padding: 24px 10px;
+  margin: 30px;
+  border-radius: 20px;
+  transition: 0.5s;
+  border: none;
+  box-shadow: 0 5px 0px rgba(0, 0, 0, 0.3);
+  position: relative;
+  width: 500px;
+  font-size: 15px;
+}
+.question2 #threeButton
+{
+  background-color: lightgrey;
+  padding: 24px 10px;
+  margin: 30px;
+  border-radius: 20px;
+  transition: 0.5s;
+  border: none;
+  box-shadow: 0 5px 0px rgba(0, 0, 0, 0.3);
+  position: relative;
+  font-size: 15px;
+  width: 500px;
+}
+
+
+.question2
+{
+  align-items: center;
+  position: absolute;
+  bottom: -1300px;
+  right: -1550px;
+  margin-bottom: 30px;
+}
+.question2 h1
+{
+  position: relative;
+  right: 150px;
+  text-align: center;
+  background-color: rgba(113, 255, 255, 0.8);
+  font-size: 30px;
+  border-radius: 20px;
+
+}
+
+/*part 3*/
+
+#part3
+{
+  position: relative;
+  bottom: -850px;  
+  right: 610px;
+
+}
+
+#part3 p
+{
+  text-align: center;
+  font-size: 30px;
+}
+
+#part3 img
+{
+  position: absolute;
+  bottom: -1100px;
+  margin-bottom: 100px;
+  left: 1250px;
+}
+
+.home
+{
+  align-items: center;
+  position: absolute;
+  bottom: -3400px;
+  right: 47%;
+}
+
+/*lesson 2*/
+
+.part21
+{
+  position: relative;
+  top: 40px;
+}
+
+.part21 h1
+{
+  font-size: 60px;
+  text-align: center;
+  transition: 0.5s;
+
+}
+.part21 h1:hover
+{
+  font-size: 70px;
+}
+
+.part21 img
+{
+  animation: animate2 4s linear infinite;
+
+}
+.part21 p
+{
+  text-align: center;
+  font-size: 23px;
+  width: 800px;
+  left: 20px;
+  position: relative;
+}
+
+.question21
+{
+  position: absolute;
+  top: 1800px;
+  text-align: center;
+  right: 850px;
+  font-size: 28px;
+}
+
+.question21 h1
+{
+  background-color: rgba(192, 110, 224, 0.8);
+  border-radius: 20px;
+}
+
+.question21 #appButton
+{
+  background-color: lightgrey;
+  padding: 20px 10px;
+  margin: 30px;
+  border-radius: 20px;
+  transition: 0.5s;
+  border: none;
+  box-shadow: 0 5px 0px rgba(0, 0, 0, 0.3);
+  position: relative;
+  width: 300px;
+  font-size: 15px;
+}
+
+.question21 #playButton
+{
+  background-color: lightgrey;
+  padding: 20px 10px;
+  margin: 30px;
+  border-radius: 20px;
+  transition: 0.5s;
+  border: none;
+  box-shadow: 0 5px 0px rgba(0, 0, 0, 0.3);
+  position: relative;
+  width: 300px;
+  font-size: 15px;
+}
+
+#part22 img
+{
+  top: 2100px;
+  position: absolute;
+  left: 50px;
+}
+
+#part22 p
+{
+  position: absolute;
+  top: 2200px;
+  right: 450px;
+  font-size: 23px;
+  text-align: center;
+  width: 800px;;
+}
+
+/*part3*/
+.question22 #firstButton
+{
+  background-color: lightgrey;
+  padding: 20px 10px;
+  margin: 30px;
+  border-radius: 20px;
+  transition: 0.5s;
+  border: none;
+  box-shadow: 0 5px 0px rgba(0, 0, 0, 0.3);
+  position: relative;
+  width: 300px;
+  font-size: 15px;
+}
+
+.question22 #secondButton
+{
+  background-color: lightgrey;
+  padding: 20px 10px;
+  margin: 30px;
+  border-radius: 20px;
+  transition: 0.5s;
+  border: none;
+  box-shadow: 0 5px 0px rgba(0, 0, 0, 0.3);
+  position: relative;
+  width: 300px;
+  font-size: 15px;
+}
+
+.question22 #thirdButton
+{
+  background-color: lightgrey;
+  padding: 20px 10px;
+  margin: 30px;
+  border-radius: 20px;
+  transition: 0.5s;
+  border: none;
+  box-shadow: 0 5px 0px rgba(0, 0, 0, 0.3);
+  position: relative;
+  width: 300px;
+  font-size: 15px;
+}
+
+.question22
+{
+  position: absolute;
+  top: 3000px;
+  left: 1075px;
+}
+
+#part23
+{
+  position: absolute;
+  top: 3200px;
+}
+
+.question22 h1
+{
+  font-size: 40px;
+  background-color: rgba(192, 110, 224, 0.8);
+  border-radius: 20px;
+  text-align: center;
+  left: -350px;
+  position: absolute;
+  width: 1150px;
+  top: -100px;
+}
+
+#part23 img
+{
+  top: 150px;
+  position: absolute;
+  left: 200px;
+}
+
+#part23 p
+{
+  width: 700px;
+  text-align: center;
+  font-size: 28px;
+  top: 350px;
+  right: 50px;
+  position: absolute;
+  
+}
+#part23 #girl
+{
+  position: absolute;
+  top: 900px;
+  left: -250px;
+  animation: animate2 4s linear infinite;
+
+}
+
+/* lesson 3 */
+
+.part31 h1
+{
+  font-size: 60px;
+  transition: 0.5s;
+  text-align: center;
+  right: 10px;
+  position: relative;
+
+}
+
+.part31 h1:hover
+{
+  font-size: 70px;
+}
+
+.part31 img
+{
+  animation: animate2 4s linear infinite;
+}
+
+.part31
+{
+  position: relative;
+  bottom: 50px;
+}
+
+.part31 p
+{
+  font-size: 26px;
+  text-align: center;
+  width: 800px;
+}
+
+.part31 h2
+{
+  font-size: 35px;
+  position: relative;
+  text-align: center;
+  right: 20px;
+}
+
+.question31 #firstButtons
+{
+  background-color: lightgrey;
+  padding: 20px 10px;
+  margin: 30px;
+  border-radius: 20px;
+  transition: 0.5s;
+  border: none;
+  box-shadow: 0 5px 0px rgba(0, 0, 0, 0.3);
+  position: relative;
+  width: 300px;
+  font-size: 15px;
+}
+
+.question31 #secondButtons
+{
+  background-color: lightgrey;
+  padding: 20px 10px;
+  margin: 30px;
+  border-radius: 20px;
+  transition: 0.5s;
+  border: none;
+  box-shadow: 0 5px 0px rgba(0, 0, 0, 0.3);
+  position: relative;
+  width: 300px;
+  font-size: 15px;
+}
+
+.question31 #thirdButtons
+{
+  background-color: lightgrey;
+  padding: 20px 10px;
+  margin: 30px;
+  border-radius: 20px;
+  transition: 0.5s;
+  border: none;
+  box-shadow: 0 5px 0px rgba(0, 0, 0, 0.3);
+  position: relative;
+  width: 300px;
+  font-size: 15px;
+}
+
+.question31 h3
+{
+  font-size: 30px;
+  background-color: rgba(110, 243, 132, 0.4);
+  border-radius: 20px;
+  text-align: center;
+  width: 1200px;
+  right: 400px;
+  position: relative;
+}
+
+.question31
+{
+  position: absolute;
+  right: -525px;
+}
+
+#part32
+{
+  position: absolute;
+  bottom: -1700px;
+  display: flex;
+}
+
+#part32 h1
+{
+  text-align: center;
+  font-size: 60px;
+  right: 550px;
+  position: relative;
+}
+
+#part32 p
+{
+  font-size: 25px;
+  text-align: center;
+  position: relative;
+  bottom: -100px;
+  width: 800px;
+  left: 120px;
+}
+#part32 img
+{
+  position: relative;
+  left: 300px;
+  animation: animate2 4s linear infinite;
+
+}
+
+.question32 #firstButton
+{
+  background-color: lightgrey;
+  padding: 20px 10px;
+  margin: 30px;
+  border-radius: 20px;
+  transition: 0.5s;
+  border: none;
+  box-shadow: 0 5px 0px rgba(0, 0, 0, 0.3);
+  position: relative;
+  width: 300px;
+  font-size: 15px;
+}
+
+.question32 #secondButton
+{
+  background-color: lightgrey;
+  padding: 20px 10px;
+  margin: 30px;
+  border-radius: 20px;
+  transition: 0.5s;
+  border: none;
+  box-shadow: 0 5px 0px rgba(0, 0, 0, 0.3);
+  position: relative;
+  width: 300px;
+  font-size: 15px;
+}
+
+.question32 #thirdButton
+{
+  background-color: lightgrey;
+  padding: 20px 10px;
+  margin: 30px;
+  border-radius: 20px;
+  transition: 0.5s;
+  border: none;
+  box-shadow: 0 5px 0px rgba(0, 0, 0, 0.3);
+  position: relative;
+  width: 300px;
+  font-size: 15px;
+}
+.question32
+{
+  position: absolute;
+  text-align: center;
+  bottom: -500px;
+  right: 850px;
+}
+.question32 h3
+{
+  text-align: center;
+  font-size: 33px;
+  background-color: rgba(110, 243, 132, 0.4);
+  border-radius: 20px;
+
+}
+#part33
+{
+  position: absolute;
+  align-items: center;
+  bottom: -2900px;
+  right: 900px;
+}
+
+#part33 img
+{
+  animation: animate2 4s linear infinite;
+}
+
+#part33 p
+{
+  text-align: center;
+  font-size: 25px;
+  right: 60px;
+  position: relative;
+}
+
+.home3
+{
+  align-items: center;
+  position: absolute;
+  bottom: -3200px;
+  right: 48%;
+}
+

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Learning Literacy</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section>
+      <div class="headerContainer">
+        <header>
+            <ul>
+                <li><a href="file:///C:/Users/Sophia/OneDrive/Desktop/webDev/Girls%20ReCode%20Hackathon/index.html">Home</a></li>
+                <li><a href="file:///C:/Users/Sophia/OneDrive/Desktop/webDev/Girls%20ReCode%20Hackathon/moreInfo.html">More Info</a></li>
+                <li><h1>Learning Literacy: Your guide to digital literacy</h1></li>
+            </ul>
+        </header>
+      </div>
+      <div class="part21">
+        <h1>Using Social Media</h1>
+        <br><br><br>
+        <img src="2.1.png" height="500px">
+        <p>
+          One of Abena's favorite hobbies is growing flowers! However, no one she knows likes to grow flowers.
+           She plans to download Instagram to upload photos of her flowers and join the flower-growing community!
+          <br><br>
+          There are all types of communities on social media apps like Instagram, Tiktok, and Twitter! 
+          You can connect with others and find people with the same interests as you.
+          <br><br>
+          First, to get Instagram, Abena has to download it from the app store, because she has an Apple phone. 
+        </p>
+        <img src="apps.png" height="500px">
+      </div>
+      <div class="question21">
+        <h1>Question: Which app should Abena use?</h1>
+        <button id="appButton">App Store</button>
+        <br>
+        <button id="playButton">Google Play</button>
+      </div>
+      <div id="part22">
+        <img src="insta1.png" height="700px">
+        <p>Correct! Next, to create a post, Abena has to click on the plus button.
+          She will then have to pick if she wants to share a post (picture), a story 
+          (a post that is there for 24 hours), a reel (video), or start a live stream.  
+          In Abena's case, she is going to share a post. 
+          <br><br>
+          Then, Abena needs to select what photo(s) she would like to post, she chooses 
+          the picture of her flowers. After that, press next.
+          <br><br>
+          Abena can now customize her post by adding a description, setting the location, 
+          tagging people, or adding music. When creating a description you can use hashtags.
+           Hashtags are words or numbers that come after a # sign. Use relevant hashtags 
+           to your post to make your post more discoverable. 
+        </p>
+      </div>
+      <div class="question22">
+        <h1>Question: Which of these hashtags should Abena use?</h1>
+        <button id="firstButton">#ilovepuppies</button>
+        <br>
+        <button id="secondButton">#iloveflowers</button>
+        <br>
+        <button id="thirdButton">#ilovetheocean</button>
+      </div>
+      <div id="part23">
+        <img src="part4.png" height="800px">
+        <p>
+          Wow! Abena's post is doing great, she finally can meet people 
+          with the same interests as her! Social media is a great tool
+           to find your community and new friends. 
+           <br><br>
+           Although, it is important to have online safety when using these apps which is discussed in another lesson. 
+        </p>
+        <img id="girl" src="2.3.png" height="500px">
+      </div>
+      <div class="home">
+        <a href="file:///C:/Users/Sophia/OneDrive/Desktop/webDev/Girls%20ReCode%20Hackathon/index.html">
+          <img src="home.png" height="150px">
+        </a>
+      </div>
+    </section>
+  </body>
+
+  <script>
+
+    const image22 = document.querySelector('#part22');
+    const selectTrue = document.querySelector('#appButton');
+    const selectFalse = document.querySelector('#playButton');
+
+    image22.style.opacity = '0';
+    image22.style.transition= '0.5s';
+
+    selectTrue.addEventListener('click', () => {
+      image22.style.opacity = '1';
+      appButton.style.background = 'greenyellow';
+      playButton.style.background = 'lightgrey';
+
+    })
+
+    selectFalse.addEventListener('click', () => {
+      playButton.style.background = 'red';
+      image22.style.opacity = '0';
+      appButton.style.background = 'lightgrey';
+
+    })
+
+
+    const part23 = document.querySelector('#part23');
+    const selectFirst = document.querySelector('#firstButton');
+    const selectSecond = document.querySelector('#secondButton');
+    const selectThird = document.querySelector('#thirdButton');
+
+    part23.style.opacity = '0';
+    part23.style.transition= '0.5s';
+
+
+
+    selectSecond.addEventListener('click', () => {
+      part23.style.opacity = '1';
+      secondButton.style.background = 'greenyellow';
+      thirdButton.style.background = 'lightgrey';
+      firstButton.style.background = 'lightgrey';
+    })
+
+    selectFirst.addEventListener('click', () => {
+      firstButton.style.background = 'red';
+      part23.style.opacity = '0';
+      secondButton.style.background = 'lightgrey';
+    })
+    selectThird.addEventListener('click', () => {
+      thirdButton.style.background = 'red';
+      secondButton.style.background = 'lightgrey';
+      part23.style.opacity = '0';
+    })
+
+  </script>
+</html>
+
+
+
+    

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Learning Literacy</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section>
+      <div class="headerContainer">
+        <header>
+            <ul>
+                <li><a href="file:///C:/Users/Sophia/OneDrive/Desktop/webDev/Girls%20ReCode%20Hackathon/index.html">Home</a></li>
+                <li><a href="file:///C:/Users/Sophia/OneDrive/Desktop/webDev/Girls%20ReCode%20Hackathon/moreInfo.html">More Info</a></li>
+                <li><h1>Learning Literacy: Your guide to digital literacy</h1></li>
+            </ul>
+        </header>
+      </div>
+      <div class="part31">
+        <h1>Online Security</h1>
+        <br><br>
+        <img src="3.1.png" height="500px">
+        <p>
+          Catherine recently got a new phone for her birthday! 
+          She is super excited to use it to text her friends and download social media,
+           however, she firsts needs to learn and understand online safety.
+          <br><br>
+          There are some dangers online, such as cyberbullying, inappropriate content, 
+          and cyberharassment. Though this does not mean you will always encounter these dangers,
+           it is important to know to make smart decisions online. 
+        </p>
+        <br><br>
+        <h2>Where do these dangers occur?</h2>
+        <br><br>
+        <p>
+          Through a chat, there is a risk of cyberbullying or harassment. 
+          To combat this you can block the person harassing you, meaning 
+          you can stop them from contacting you. If a video game has a built-in 
+          chat or voice chat you can also block, report, or mute the harasser. 
+          <br><br>
+          Be aware of spam emails in your email inbox. These spam emails 
+          can lead you to bad websites, give you false information, scamming, or even viruses. 
+          <br><br>
+          When using social media don't share too much about yourself, you should never share 
+          your address or phone number. Also when using social media, think before you post. 
+          It is easy to not think how a comment or post could hurt someone. 
+
+        </p>
+        <br><br>
+        <div class="question31">
+          <h3>Question: If Catherine encounters someone that keeps messaging her hateful comments, what should she do? </h3>
+          <button id="firstButtons">Block them</button>
+          <br>
+          <button id="secondButtons">Ignore them</button>
+          <br>
+          <button id="thirdButtons">Let them continue</button>
+        </div>
+      </div>
+      <div id="part32">
+        <img src="lock.png" height="600px">
+        <p>When creating accounts for apps or websites it is important to have a strong password. When  creating a password, it is important to follow these rules.
+          <br><br>
+          The password should be at least ten characters (letters) long
+          <br><br>
+          It should be complex and unique
+          <br><br>
+          A combination of letters, numbers, and special characters
+          <br><br>
+          Should not resemble a name or common word
+          <br><br>
+          No personal information should be in the password
+        </p>
+        <br>
+        <h1>Strong Passwords</h1>
+        <div class="question32">
+          <h3>Question: What password should Catherine use?</h3>
+            <button id="firstButton">catherine123</button>
+            <br>
+            <button id="secondButton">pass!2%</button>
+            <br>
+            <button id="thirdButton">V2%comp123!</button>
+        </div>
+      </div>
+      <div id="part33">
+        <img src="3.3.png" height="500px">
+        <p>Now you and Catherine know how to stay safe online!</p>
+      </div>
+      <div class="home3">
+        <a href="file:///C:/Users/Sophia/OneDrive/Desktop/webDev/Girls%20ReCode%20Hackathon/index.html">
+          <img src="home.png" height="150px">
+        </a>
+      </div>
+    </section>
+  </body>
+
+  <script>
+    const part32 = document.querySelector('#part32');
+    const selectSecond = document.querySelector('#firstButtons');
+    const selectFirst = document.querySelector('#secondButtons');
+    const selectThird = document.querySelector('#thirdButtons');
+
+    part32.style.opacity = '0';
+    part32.style.transition= '0.5s';
+
+
+
+    selectSecond.addEventListener('click', () => {
+      part32.style.opacity = '1';
+      firstButtons.style.background = 'greenyellow';
+      thirdButtons.style.background = 'lightgrey';
+      secondButtons.style.background = 'lightgrey';
+    })
+
+    selectFirst.addEventListener('click', () => {
+      secondButtons.style.background = 'red';
+      part32.style.opacity = '0';
+      firstButtons.style.background = 'lightgrey';
+    })
+    selectThird.addEventListener('click', () => {
+      thirdButtons.style.background = 'red';
+      firstButtons.style.background = 'lightgrey';
+      part32.style.opacity = '0';
+    })
+
+    const part33 = document.querySelector('#part33');
+    const selectFirsts = document.querySelector('#firstButton');
+    const selectSeconds = document.querySelector('#thirdButton');
+    const selectThirds = document.querySelector('#secondButton');
+
+    part33.style.opacity = '0';
+    part33.style.transition= '0.5s';
+
+
+
+    selectSeconds.addEventListener('click', () => {
+      part33.style.opacity = '1';
+      thirdButton.style.background = 'greenyellow';
+      firstButton.style.background = 'lightgrey';
+      secondButton.style.background = 'lightgrey';
+    })
+
+    selectFirsts.addEventListener('click', () => {
+      firstButton.style.background = 'red';
+      part33.style.opacity = '0';
+      thirdButton.style.background = 'lightgrey';
+    })
+    selectThirds.addEventListener('click', () => {
+      secondButton.style.background = 'red';
+      thirdButton.style.background = 'lightgrey';
+      part33.style.opacity = '0';
+    })
+
+  </script>
+</html>
